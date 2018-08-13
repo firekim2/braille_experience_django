@@ -1,0 +1,347 @@
+@charset "utf-8";
+
+*{font-family:'나눔고딕',NanumGothic,'돋움',Dotum,'굴림',Gulim,Helvetica,sans-serif!important}body,button,h1,h2,h3,h4,h5,input,select,table,textarea{
+  font-size:14px;line-height:1.267em
+}
+
+body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, select, table, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    background-color: #f2f2f2;
+    color: #000;
+    word-break: break-all;
+    -webkit-text-size-adjust: none;
+}
+
+form{
+  display:block;
+  margin-top:0em;
+}
+
+.nav{
+  position: relative;
+  z-index: 20;
+  height:43px;
+  padding-right: 41px;
+  background:#fff;
+}
+
+.sch{
+  position : relative;
+  z-index: 2225;
+}
+
+.sch_w{
+  overflow:hidden;
+  position: relative;
+  height: 100px;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.sch_w::after{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color:rgba(0,0,0,.1);
+  content: '';
+}
+
+.sch_w form{
+  padding-top: 49px;
+  margin-top: -100px;
+}
+
+.lg_h{
+  z-index: 2;
+  height: 100px;
+  text-align: center;
+  background-color: #00c73c;
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#00c73c),color-stop(100%,#37cd2e));
+  background-size: auto 100px;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+}
+
+.lg_aw{
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+}
+
+.lg_a{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.blind{
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+.blind::before{
+  display: block;
+  width: 0;
+  height: 0;
+  content: '\00a0';
+  font-size:0;
+}
+
+.sch_inpw{
+  display: block;
+  position: relative;
+  z-index: 20;
+  height: 40px;
+  margin: 0 15px;
+  background-color:#fff;
+  -webkit-box-shadow: 0 0 0 1px rgba(0,0,0,.08);
+  box-shadow: 0 0 0 1px rgba(0,0,0,.08);
+}
+
+.sch_inpw_in {
+  padding-right: 125px;
+  display: block;
+  padding: 9px 85px 0 10px;
+}
+
+.sch_inp, .sch_inp:focus {
+  width: 100%;
+  height: 27px;
+  color: #000;
+  border: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background: 0 0;
+  font-size: 17px;
+  line-height: 27px;
+  vertical-align: top;
+  -webkit-appearance: none;
+  outline: 0;
+}
+
+.sch_hw {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    border: 0;
+    background-color:transparent;
+    -webkit-appearance: none;
+}
+
+.sch_hw .sprh_sch_ham {
+  position: relative;
+  width: 50px;
+  height: 48px;
+  background: 0 0;
+  vertical-align: top;
+}
+
+.sprh_sch_ham::after, .sprh_sch_ham{
+    background-image: url(https://s.pstatic.net/static/www/m/2018/sp_main_v180627.png);
+    -webkit-background-size: 709px 708px;
+    background-size: 709px 708px;
+    background-repeat: no-repeat;
+}
+
+.sch_hw .sprh_sch_ham::after {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 17px;
+  background-position: -83px -667px;
+  position: absolute;
+  top: 16px;
+  left: 14px;
+}
+
+.nav .scroll_wrap {
+  overflow: hidden;
+}
+
+article, aside, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+
+.nav .nav_btn_more{
+  position: absolute;
+  top : 0;
+  right: 0;
+  width: 41px;
+  height: 43px;
+  border: 0;
+  border-left: 1px solid #e5e5e5;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.nav .nav_u{
+  display: table;
+  width: 100%;
+  height: 43px;
+  padding: 0 12px;
+  white-space: nowrap;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.nav .nav_l{
+  display: table-cell;
+  width:400px;
+  white-space: nowrap;
+}
+
+.nav .nav_l:first-child .nav_a {
+  margin-left: 0;
+}
+
+.nav .nav_lon .nav_a {
+  height: 41px;
+  border-bottom: 2px solid #16b634;
+  color: #16b634;
+}
+
+.nav .nav_a {
+  display: inline-block;
+  position: relative;
+  height: 43px;
+  padding: 0 5px;
+  margin-left: 5px;
+  font-family: HelveticaNeue-Condensed,Helvetica,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #333;
+  text-shadow: 0 -1px 1px rgba(255,255,255,.7);
+  line-height: 44px;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+  -webkit-tap-hightlight-color: rgba(0,0,0,.1);
+}
+
+.nav .nav_a.nav_news::after{
+  width:28px;
+  height:16px;
+  background-position:127px -618px;
+}
+
+.nav .nav_a.nav_ent::after {
+    width: 27px;
+    height: 16px;
+    background-position: -291px -618px;
+}
+
+.nav .nav_a::after{
+  content:"";
+  display: block;
+  position: relative;
+  top: 13.5px
+}
+
+.nav .nav_a.nav_sports::after {
+    width: 42px;
+    height: 16px;
+    background-position: -225px -527px;
+}
+
+.nav .nav_a.nav_shopping::after {
+    width: 26px;
+    height: 16px;
+    background-position: -351px -645px;
+}
+
+.nav .nav_a.nav_place::after {
+    width: 54px;
+    height: 16px;
+    background-position: 0 -527px;
+}
+
+ol, ul{
+  list-style: none;
+}
+
+.nav .grd_next {
+    position: absolute;
+    top: 0;
+    right: 40px;
+    width: 26px;
+    height: 40px;
+    background: -webkit-gradient(linear,left top,right top,color-stop(0,rgba(255,255,255,0)),color-stop(60%,#fff));
+    z-index: 1;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.nav .grd_prev {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 40px;
+    background: -webkit-gradient(linear,left top,right top,color-stop(16.66%,#fff),color-stop(100%,rgba(255,255,255,0)));
+    z-index: 1;
+}
+
+.cui_airsguide .ca_info::before, .cui_apps .ca_title_airs::after, .cui_bundle .cb_btn_help::before, .cui_bundle .cb_mw .cb_noimage::before, .cui_bundle .cb_title_airs::after, .cui_bundle .fct_more_btn::before, .cui_bundle .ly_fct_more_wrap .lfm_close::before, .cui_bundle .ly_fct_more_wrap .lfm_ico.ico_add::before, .cui_bundle .ly_fct_more_wrap .lfm_ico.ico_change::before, .cui_bundle .ly_fct_more_wrap .lfm_ico.ico_delete::before, .cui_cartech .cct_title_airs::after, .cui_cartech_thumbnails .cct_title_airs::after, .cui_channel_journal .ccj_title_airs::after, .cui_channel_journal .sub_info_st::after, .cui_creator .cc_title_airs::after, .cui_cupid_news .ccn_title::after, .cui_cupid_news .ccn_title_airs::after, .cui_cupid_news .fct_more_btn::before, .cui_cupid_news .ly_fct_more_wrap .lfm_close::before, .cui_cupid_news .ly_fct_more_wrap .lfm_ico.ico_add::before, .cui_cupid_news .ly_fct_more_wrap .lfm_ico.ico_change::before, .cui_cupid_news .ly_fct_more_wrap .lfm_ico.ico_delete::before, .cui_election .ce_banner_status::before, .cui_election .ce_banner_title .ico_stamp, .cui_election .ce_banner_title .ico_txt_early_election, .cui_election .ce_banner_title .ico_txt_election, .cui_election .ce_banner_title .ico_txt_pre_election, .cui_election .ce_banner_wrap::before, .cui_election .ce_btn_setting::before, .cui_election .ce_discussion_title .ico_live::after, .cui_election .ce_helper, .cui_election .ce_ico_certain, .cui_election .ce_ico_predict1, .cui_election .ce_ico_predict2, .cui_election .ce_ico_rank1, .cui_election .ce_ico_rank2, .cui_election .ce_ico_strong, .cui_election .ce_ico_success, .cui_election .ce_ico_win, .cui_election .ce_ly_close::before, .cui_election .ce_politic_info.ico_party0000::before, .cui_election .ce_politic_info.ico_party0::before, .cui_election .ce_politic_info.ico_party100::before, .cui_election .ce_politic_info.ico_party200::before, .cui_election .ce_politic_info.ico_party2080::before, .cui_election .ce_politic_info.ico_party5020::before, .cui_election .ce_politic_info.ico_party730::before, .cui_election .ce_politic_info.ico_party9999::before, .cui_election .ce_politic_title_wrap .politic_more::after, .cui_election .ce_rating .ce_result::after, .cui_election .ce_state.ce_cancel::after, .cui_election .ce_state.ce_die::after, .cui_election .ce_state.ce_resign::after, .cui_election .ce_title_airs::after, .cui_election .ce_title_wrap .ico_txt_election, .cui_election .ce_title_wrap::before, .cui_election .contention_more::after, .cui_election .ico_txt_badge, .cui_election .ico_txt_badge.complete, .cui_election .ico_txt_badge.done, .cui_election .ico_txt_badge.ongoing, .cui_election .ico_txt_badge.open, .cui_election .ico_txt_badge.pre_complete, .cui_election .ico_txt_badge.pre_today, .cui_election .ico_txt_badge.pre_vote, .cui_election .ico_txt_badge.today, .cui_election .ico_txt_badge.wayout, .cui_election .uio_text .btn_cluster::before, .cui_election.ce_counting .ce_title_wrap::before, .cui_election.ce_done .ce_title_wrap::before, .cui_election.ce_exitpoll .ce_title_wrap::before, .cui_election.ce_single .ce_title_wrap::before, .cui_error .ce_tit_wrap.ce_network::before, .cui_food .cf_btn_close::before, .cui_food .cf_btn_help::before, .cui_food .cf_title_airs::after, .cui_foreign_toolbar .ft_time_diff::before, .cui_foreign_toolbar .ft_title_airs::after, .cui_hotlink_icons .chi_title_airs::after, .cui_hotplace .ch_title_airs::after, .cui_ico_audio, .cui_ico_book, .cui_ico_download, .cui_ico_gif, .cui_ico_movie, .cui_ico_pic, .cui_mixed .cm_title_airs::after, .cui_musiciansnow .cm_title_airs::after, .cui_nightnews .cn_btn_close::before, .cui_nightnews .cn_btn_ques::before, .cui_placeweather .cp_locale_area .btn_locale.loading::after, .cui_placeweather .cp_locale_area .btn_locale::before, .cui_quiz .cq_title_airs::after, .cui_recnews .cr_btn_thelp::before, .cui_recnews .cr_title_airs::after, .cui_reporter .cr_btn_thelp::before, .cui_reporter .cr_noimage::before, .cui_reporter .cr_title_airs::after, .cui_repurchase .cr_title_airs::after, .cui_scroll .cs_title_airs::after, .cui_search_add .csa_a::before, .cui_search_add .csa_btn_lclose::after, .cui_search_add .csa_close_btn::before, .cui_search_add .csa_title::before, .cui_search_nlabs .csn_btn_close::before, .cui_series .cs_btn_hclose::before, .cui_series .cs_btn_help::before, .cui_series .cs_title_airs::after, .cui_singing_room .fct_more_btn::before, .cui_singing_room .ly_fct_more_wrap .lfm_close::before, .cui_singing_room .ly_fct_more_wrap .lfm_ico.ico_add::before, .cui_singing_room .ly_fct_more_wrap .lfm_ico.ico_change::before, .cui_singing_room .ly_fct_more_wrap .lfm_ico.ico_delete::before, .cui_singing_room .sr_title_airs::after, .cui_star_contents .sc_title_airs::after, .cui_stylepick .cs_title_airs::after, .cui_subscribeplace .cs_noimage::before, .cui_subscribeplace .cs_title_airs::after, .cui_sympathy_ranking .csr_title_airs::after, .cui_tag .ct_title_airs::after, .cui_text .ct_title_airs::after, .cui_thumbtext .ct_title_airs::after, .cui_thumbtext .cui_ico_audio, .cui_thumbtext .cui_ico_movie, .cui_triplethumbs .ct_btn_help::before, .cui_triplethumbs .ct_title_airs::after, .cui_tvprogram .ct_btn_hclose::before, .cui_tvprogram .ct_btn_help::before, .cui_tvprogram .ct_title_airs::after, .cui_twothumbs .ct_noimage::before, .cui_twothumbs .ct_title_airs::after, .cui_video_ranking .cui_ico_movie, .cui_video_ranking .cvr_btn_thelp::before, .cui_video_ranking .cvr_title_airs::after, .cui_video_ranking .fct_more_btn::before, .cui_video_ranking .ly_fct_more_wrap .lfm_close::before, .cui_video_ranking .ly_fct_more_wrap .lfm_ico.ico_add::before, .cui_video_ranking .ly_fct_more_wrap .lfm_ico.ico_change::before, .cui_video_ranking .ly_fct_more_wrap .lfm_ico.ico_delete::before, .cui_video_schedule .cvs_title_airs::after, .cui_weatherindex .cw_btn_fold::after, .cui_weatherindex .cw_btn_local::before, .cui_weatherindex .cw_ico_loading::after, .cui_withjoin .cw_title_airs::after, .cui_worldcup .cw_title_airs::after, .cui_worldcup_news .cwn_title_airs::after, .float_nlight .fn_a::before, .float_nlight .fn_btn_close::before, .header_interactive .hi_close::after, .id_cui_video_ranking .fct_more_btn::before, .id_cui_video_ranking .ly_fct_more_wrap .lfm_close::before, .id_cui_video_ranking .ly_fct_more_wrap .lfm_ico.ico_add::before, .id_cui_video_ranking .ly_fct_more_wrap .lfm_ico.ico_change::before, .id_cui_video_ranking .ly_fct_more_wrap .lfm_ico.ico_delete::before, .id_uio_best_news .fct_more_btn::before, .id_uio_best_news .ly_fct_more_wrap .lfm_close::before, .id_uio_best_news .ly_fct_more_wrap .lfm_ico.ico_add::before, .id_uio_best_news .ly_fct_more_wrap .lfm_ico.ico_change::before, .id_uio_best_news .ly_fct_more_wrap .lfm_ico.ico_delete::before, .id_uio_major_news .fct_more_btn::before, .id_uio_major_news .ly_fct_more_wrap .lfm_close::before, .id_uio_major_news .ly_fct_more_wrap .lfm_ico.ico_add::before, .id_uio_major_news .ly_fct_more_wrap .lfm_ico.ico_change::before, .id_uio_major_news .ly_fct_more_wrap .lfm_ico.ico_delete::before, .im_top, .ly_area_senior .las_asenior::before, .ly_area_senior .las_tit::after, .ly_guide_mychannel .lgm_btn_close::before, .ly_smartlens .ls_btn_close::before, .ly_smartlens .ls_btn_smartlens::before, .ly_vbanner .btn_close::after, .ms_wrap .ms_a.nav_animal::before, .ms_wrap .ms_a.nav_bboom::before, .ms_wrap .ms_a.nav_beauty::before, .ms_wrap .ms_a.nav_boom::before, .ms_wrap .ms_a.nav_business::before, .ms_wrap .ms_a.nav_cargame::before, .ms_wrap .ms_a.nav_china::before, .ms_wrap .ms_a.nav_culture::before, .ms_wrap .ms_a.nav_design::before, .ms_wrap .ms_a.nav_emotion::before, .ms_wrap .ms_a.nav_ent::before, .ms_wrap .ms_a.nav_farm::before, .ms_wrap .ms_a.nav_finance::before, .ms_wrap .ms_a.nav_gameapp::before, .ms_wrap .ms_a.nav_health::before, .ms_wrap .ms_a.nav_ittech::before, .ms_wrap .ms_a.nav_job::before, .ms_wrap .ms_a.nav_language::before, .ms_wrap .ms_a.nav_law::before, .ms_wrap .ms_a.nav_living::before, .ms_wrap .ms_a.nav_livinghome::before, .ms_wrap .ms_a.nav_momkids::before, .ms_wrap .ms_a.nav_movie::before, .ms_wrap .ms_a.nav_music::before, .ms_wrap .ms_a.nav_myfeed::before, .ms_wrap .ms_a.nav_news::before, .ms_wrap .ms_a.nav_place::before, .ms_wrap .ms_a.nav_school::before, .ms_wrap .ms_a.nav_science::before, .ms_wrap .ms_a.nav_shopping::before, .ms_wrap .ms_a.nav_show::before, .ms_wrap .ms_a.nav_sports::before, .ms_wrap .ms_a.nav_today::before, .ms_wrap .ms_a.nav_travel::before, .ms_wrap .ms_a.nav_video::before, .ms_wrap .ms_a.nav_wedding::before, .ms_wrap .ms_a.nav_with::before, .ms_wrap .ms_a::before, .ms_wrap .ms_onedit .ms_itemdrag .ms_a.nav_animal::before, .ms_wrap .ms_onedit .ms_itemdrag .ms_a.nav_bboom::before, .ms_wrap .ms_onedit .ms_itemdrag .ms_a.nav_beauty::before, .ms_wrap .ms_onedit .ms_itemdrag .ms_a.nav_boom::before, .ms_wrap .ms_onedit .ms_itemdrag .ms_a.nav_business::before, .ms_wrap .ms_onedit .ms_itemdrag .ms_a.nav_cargame::before, .ms_wrap .ms_onedit .ms_itemdrag .ms_a.nav_china::before, .ms_wrap .ms_onedit .ms_itemdrag .ms_a.nav_culture::before, .ms_wrap .ms_onedit .ms_itemdrag .ms_a.nav_design::before, .ms_wrap .ms_onedit .ms_itemdrag .ms_a.nav_emotion::before, .ms_wrap .ms_onedit .ms_itemdrag .ms_a.nav_ent::before, .ms_wrap .ms_onedit .ms_itemdrag .ms_a.nav_farm::before, .ms_wrap .ms_onedit .ms_itemdrag .ms_a.nav_finance::before, .ms_wrap .ms_onedit .ms_itemdrag .ms_a.nav_gameapp::before, .ms_wrap .ms_onedit .ms_itemdrag .ms_a.nav_health::before, .ms_wrap .ms_onedit .ms_itemdrag .ms_a.nav_ittech::before, .ms_wrap .ms_onedit .ms_itemdrag .ms_a.nav_job::before, .ms_wrap .ms_onedit .ms_itemdrag .ms_a.nav_language::before, .ms_wrap .ms_onedit .ms_itemdrag .ms_a.nav_law::before, .ms_wrap .ms_onedit .ms_itemdrag .ms_a.nav_living::before, .ms_wrap .ms_onedit .ms_itemdrag .ms_a.nav_livinghome::before, .ms_wrap .ms_onedit .ms_itemdrag .ms_a.nav_momkids::before, .ms_wrap .ms_onedit .ms_itemdrag .ms_a.nav_movie::before, .ms_wrap .ms_onedit .ms_itemdrag .ms_a.nav_music::before, .ms_wrap .ms_onedit .ms_itemdrag .ms_a.nav_myfeed::before, .ms_wrap .ms_onedit .ms_itemdrag .ms_a.nav_news::before, .ms_wrap .ms_onedit .ms_itemdrag .ms_a.nav_place::before, .ms_wrap .ms_onedit .ms_itemdrag .ms_a.nav_school::before, .ms_wrap .ms_onedit .ms_itemdrag .ms_a.nav_science::before, .ms_wrap .ms_onedit .ms_itemdrag .ms_a.nav_shopping::before, .ms_wrap .ms_onedit .ms_itemdrag .ms_a.nav_show::before, .ms_wrap .ms_onedit .ms_itemdrag .ms_a.nav_sports::before, .ms_wrap .ms_onedit .ms_itemdrag .ms_a.nav_today::before, .ms_wrap .ms_onedit .ms_itemdrag .ms_a.nav_travel::before, .ms_wrap .ms_onedit .ms_itemdrag .ms_a.nav_video::before, .ms_wrap .ms_onedit .ms_itemdrag .ms_a.nav_wedding::before, .ms_wrap .ms_onedit .ms_itemdrag .ms_a.nav_with::before, .nav .nav_a.nav_animal::after, .nav .nav_a.nav_bboom::after, .nav .nav_a.nav_beauty::after, .nav .nav_a.nav_boom::after, .nav .nav_a.nav_business::after, .nav .nav_a.nav_cargame::after, .nav .nav_a.nav_china::after, .nav .nav_a.nav_culture::after, .nav .nav_a.nav_design::after, .nav .nav_a.nav_emotion::after, .nav .nav_a.nav_ent::after, .nav .nav_a.nav_farm::after, .nav .nav_a.nav_finance::after, .nav .nav_a.nav_gameapp::after, .nav .nav_a.nav_health::after, .nav .nav_a.nav_ittech::after, .nav .nav_a.nav_job::after, .nav .nav_a.nav_language::after, .nav .nav_a.nav_law::after, .nav .nav_a.nav_living::after, .nav .nav_a.nav_livinghome::after, .nav .nav_a.nav_momkids::after, .nav .nav_a.nav_movie::after, .nav .nav_a.nav_music::after, .nav .nav_a.nav_myfeed::after, .nav .nav_a.nav_news::after, .nav .nav_a.nav_place::after, .nav .nav_a.nav_school::after, .nav .nav_a.nav_science::after, .nav .nav_a.nav_shopping::after, .nav .nav_a.nav_show::after, .nav .nav_a.nav_sports::after, .nav .nav_a.nav_today::after, .nav .nav_a.nav_travel::after, .nav .nav_a.nav_video::after, .nav .nav_a.nav_wedding::after, .nav .nav_a.nav_with::after, .nav .nav_btn_more::after, .nav .nav_lon .nav_a.nav_animal::after, .nav .nav_lon .nav_a.nav_bboom::after, .nav .nav_lon .nav_a.nav_beauty::after, .nav .nav_lon .nav_a.nav_boom::after, .nav .nav_lon .nav_a.nav_business::after, .nav .nav_lon .nav_a.nav_cargame::after, .nav .nav_lon .nav_a.nav_china::after, .nav .nav_lon .nav_a.nav_culture::after, .nav .nav_lon .nav_a.nav_design::after, .nav .nav_lon .nav_a.nav_emotion::after, .nav .nav_lon .nav_a.nav_ent::after, .nav .nav_lon .nav_a.nav_farm::after, .nav .nav_lon .nav_a.nav_finance::after, .nav .nav_lon .nav_a.nav_gameapp::after, .nav .nav_lon .nav_a.nav_health::after, .nav .nav_lon .nav_a.nav_ittech::after, .nav .nav_lon .nav_a.nav_job::after, .nav .nav_lon .nav_a.nav_language::after, .nav .nav_lon .nav_a.nav_law::after, .nav .nav_lon .nav_a.nav_living::after, .nav .nav_lon .nav_a.nav_livinghome::after, .nav .nav_lon .nav_a.nav_momkids::after, .nav .nav_lon .nav_a.nav_movie::after, .nav .nav_lon .nav_a.nav_music::after, .nav .nav_lon .nav_a.nav_myfeed::after, .nav .nav_lon .nav_a.nav_news::after, .nav .nav_lon .nav_a.nav_place::after, .nav .nav_lon .nav_a.nav_school::after, .nav .nav_lon .nav_a.nav_science::after, .nav .nav_lon .nav_a.nav_shopping::after, .nav .nav_lon .nav_a.nav_show::after, .nav .nav_lon .nav_a.nav_sports::after, .nav .nav_lon .nav_a.nav_today::after, .nav .nav_lon .nav_a.nav_travel::after, .nav .nav_lon .nav_a.nav_video::after, .nav .nav_lon .nav_a.nav_wedding::after, .nav .nav_lon .nav_a.nav_with::after, .nav .nav_notice::after, .rtk.rtk4search .fct_more_btn::before, .rtk.rtk4search .ly_fct_more_wrap .lfm_close::before, .rtk.rtk4search .ly_fct_more_wrap .lfm_ico.ico_add::before, .rtk.rtk4search .ly_fct_more_wrap .lfm_ico.ico_change::before, .rtk.rtk4search .ly_fct_more_wrap .lfm_ico.ico_delete::before, .rtk.rtk4search .sprh_arrow_dwn::before, .rtk_toggle .sprh_arrow_dwn::before, .rtkx .rtkx_btn_chelp::before, .rtkx .rtkx_btn_hclose::before, .rtkx .rtkx_da::after, .rtkx .rtkx_ha::after, .rtkx .rtkx_hst, .rtkx_toggle .sprh_arrow_up::before, .sch_hw .sprh_sch_ham::after, .scs_btn_wrap .scs_btn_save::after, .scs_btn_wrap .scs_btn_save::before, .search_card_effect .sec_icon_cover::before, .search_card_effect .sec_icon_effect::before, .search_card_effect .sec_icon_typo::before, .search_card_header .btn_card_close::after, .search_card_header .card_num .ico_slash::after, .search_card_setting .ico_scs_airs::after, .search_card_setting .scs_available .ico_scs_airs::after, .search_card_setting .scs_available .scs_a::after, .search_card_setting .scs_btn_drag::after, .search_card_setting .scs_exist .scs_a::after, .search_card_setting .scs_ico_new::after, .search_card_setting .scs_item.scs_dragging .scs_btn_drag::after, .section_panelauthor .sp_link::after, .sprh_region_around, .sprh_region_lens, .sprh_region_mic, .sprh_rtkdown, .sprh_rtkup, .sprh_submit, .spuio_audio, .spuio_audio_big, .spuio_download, .spuio_download_big, .spuio_hearing, .spuio_issue, .spuio_listen, .spuio_movie, .spuio_movie_big, .spuio_pic, .spuio_pic_big, .spuio_time_play, .toonstk .sprh_stkdown, .toonstk .sprh_stktd, .toonstk .sprh_stkup, .toonstk .stk2_m .stk2_more_arr, .toonstk .toon2_a .sprh_toon2, .uc_noimage::before, .uio_banner_cover .ubc_btn::after, .uio_banner_cover .ubc_text::before, .uio_banner_subject .ubs_btn::before, .uio_best_news .fct_more_btn::before, .uio_best_news .ly_fct_more_wrap .lfm_close::before, .uio_best_news .ly_fct_more_wrap .lfm_ico.ico_add::before, .uio_best_news .ly_fct_more_wrap .lfm_ico.ico_change::before, .uio_best_news .ly_fct_more_wrap .lfm_ico.ico_delete::before, .uio_best_news .sp_ico_ubn_more, .uio_best_news .ubn_btn_hclose::after, .uio_best_news .ubn_btn_help::after, .uio_best_news_search .fct_more_btn::before, .uio_best_news_search .ly_fct_more_wrap .lfm_close::before, .uio_best_news_search .ly_fct_more_wrap .lfm_ico.ico_add::before, .uio_best_news_search .ly_fct_more_wrap .lfm_ico.ico_change::before, .uio_best_news_search .ly_fct_more_wrap .lfm_ico.ico_delete::before, .uio_best_news_search .ubns_view::before, .uio_cd_bestchannel .ucb_btn_add, .uio_cd_bestchannel .ucb_complete, .uio_cd_bestchannel .ucb_favorite::before, .uio_cd_bestchannel .ucb_ico_official, .uio_cd_bestculture .ucb_ma::after, .uio_cd_bestfeed .ucb_btn_addfeed::after, .uio_cd_bestfeed .ucb_btn_complete::after, .uio_cd_bestfeed .ucb_ico_official, .uio_cd_disco .ucd_install_a::after, .uio_cd_disco .ucd_ly_close::before, .uio_cd_emptychannel .uce_amore::after, .uio_cd_emptychannel .uce_btn_add::after, .uio_cd_emptychannel .uce_tit_wrap.uce_blog:only-child::before, .uio_cd_emptychannel .uce_tit_wrap.uce_cafe:only-child::before, .uio_cd_emptychannel .uce_tit_wrap.uce_disco:only-child::before, .uio_cd_emptychannel .uce_tit_wrap.uce_news:only-child::before, .uio_cd_emptychannel .uce_tit_wrap.uce_post:only-child::before, .uio_cd_emptychannel .uce_tit_wrap.uce_tvcast:only-child::before, .uio_cd_emptychannel .uce_tit_wrap:only-child::before, .uio_cd_endpanel .uce_a .uce_d::after, .uio_cd_endpanel .uce_btn_close::after, .uio_cd_epick .uce_ico_link, .uio_cd_errorchannel::before, .uio_cd_estatevalue .sp_uce_location, .uio_cd_estatevalue .sp_uce_mylocation, .uio_cd_estatevalue .sp_uce_search, .uio_cd_estatevalue .uce_sale.uce_dec .sp_uce_vicon, .uio_cd_estatevalue .uce_sale.uce_inc .sp_uce_vicon, .uio_cd_evalpick .uce_ico_momkids, .uio_cd_evalpick .uce_mka::after, .uio_cd_fbanner .ucf_btn_close::before, .uio_cd_fbanner .ucf_close2::after, .uio_cd_fbanner .ucf_close::after, .uio_cd_fbanner .ucf_slink::after, .uio_cd_fbanner .ucf_slink::before, .uio_cd_feedevent .ucf_ico_beta, .uio_cd_hottoon .uch_info::before, .uio_cd_hottoon .uch_na::after, .uio_cd_linkchannel .ucl_a.ucl_ico_blog::before, .uio_cd_linkchannel .ucl_a.ucl_ico_cafe::before, .uio_cd_linkchannel .ucl_a.ucl_ico_post::before, .uio_cd_linkchannel .ucl_btn_more::after, .uio_cd_linkchannel .ucl_ct .ucl_official, .uio_cd_linkchannel .ucl_favorite::before, .uio_cd_linkchannel .ucl_ico_link, .uio_cd_linkchannel .ucl_ico_official, .uio_cd_loginchannel .ucl_ico_beta, .uio_cd_mento .ucm_ico_ad, .uio_cd_musicrank .ucm_btn_more::after, .uio_cd_musicrank .ucm_ico_down, .uio_cd_musicrank .ucm_ico_up, .uio_cd_musicrank .ucm_ma::after, .uio_cd_myarticle .response_reply .ico_reply, .uio_cd_myarticle .response_share .ico_share, .uio_cd_myarticle .ucm_btn_function::before, .uio_cd_myarticle .ucm_btn_subscribe.subscribe_on::before, .uio_cd_myarticle .ucm_btn_subscribe::before, .uio_cd_myarticle .ucm_function_close::before, .uio_cd_mychannel .ucm_bt.ucm_official::after, .uio_cd_mychannel .ucm_btn_addfeed::after, .uio_cd_mychannel .ucm_btn_complete::after, .uio_cd_mychannel .ucm_btn_function::before, .uio_cd_mychannel .ucm_btn_more::after, .uio_cd_mychannel .ucm_chk.ucm_chk_on::after, .uio_cd_mychannel .ucm_chk::after, .uio_cd_mychannel .ucm_chk[checked]::after, .uio_cd_mychannel .ucm_favorite::before, .uio_cd_mychannel .ucm_tit_wrap.ucm_tit_type2 .ucm_btn_function.ucm_btn_on::before, .uio_cd_mychannel .ucm_tit_wrap.ucm_tit_type2 .ucm_btn_function::before, .uio_cd_myfeed .spuio_movie, .uio_cd_myfeed .ucm_btn_fold::after, .uio_cd_myfeed .ucm_btn_follow.ucm_btn_on::before, .uio_cd_myfeed .ucm_btn_follow::before, .uio_cd_myfeed .ucm_btn_function::before, .uio_cd_myfeed .ucm_btn_hclose::before, .uio_cd_myfeed .ucm_btn_help::before, .uio_cd_myfeed .ucm_btn_more::after, .uio_cd_myfeed .ucm_btn_subscribe.ucm_btn_on::before, .uio_cd_myfeed .ucm_btn_subscribe::before, .uio_cd_myfeed .ucm_function_close::before, .uio_cd_myfeed .ucm_te.ucm_official::after, .uio_cd_myonboarding .btn_ucm_feed.btn_ucm_feed_on::before, .uio_cd_myonboarding .btn_ucm_feed::before, .uio_cd_myonboarding .ucm_bst::after, .uio_cd_myonboarding .ucm_btn_function::before, .uio_cd_myonboarding .ucm_btn_more::after, .uio_cd_myonboarding .ucm_cite_wrap .ucm_btn_function::before, .uio_cd_myonboarding .ucm_cmw::before, .uio_cd_myonboarding .ucm_function_close::before, .uio_cd_myonboarding .ucm_item .ucm_ico_official, .uio_cd_myonboarding .ucm_tit_wrap .ucm_btn_function::before, .uio_cd_myonboarding .ucm_tmw::before, .uio_cd_myonboarding .ucm_top_wrap .ucm_btn_function::before, .uio_cd_mysns .spuio_movie, .uio_cd_mysns .ucm_btn_count::before, .uio_cd_mysns .ucm_btn_function::before, .uio_cd_mysns .ucm_btn_share::before, .uio_cd_mysns .ucm_btn_subscribe.subscribe_on::before, .uio_cd_mysns .ucm_btn_subscribe::before, .uio_cd_mysns .ucm_function_close::before, .uio_cd_nlight .ucn_a::after, .uio_cd_nlight .ucn_a::before, .uio_cd_nlight .ucn_btn_close::before, .uio_cd_premento .ucp_btn_hclose::after, .uio_cd_premento .ucp_btn_help::after, .uio_cd_premento .ucp_btn_more::after, .uio_cd_premento .ucp_ico_follow, .uio_cd_premento .ucp_ico_view, .uio_cd_product .ucp_ico_link, .uio_cd_pshot .ucp_arr_circle, .uio_cd_recommendedit .ucr_btn_function::before, .uio_cd_recommendedit .ucr_fmw, .uio_cd_recommendedit .ucr_fmw.ucr_editor_add::before, .uio_cd_recommendedit .ucr_function_close::before, .uio_cd_recommendedit .ucr_ly_notice::before, .uio_cd_recommendedit .ucr_ly_wrap::before, .uio_cd_recommendedit .ucr_mw.ucr_editor_add::before, .uio_cd_recommendedit .ucr_tab.tab_manage.tab_on::after, .uio_cd_recommendedit .ucr_tab.tab_manage::after, .uio_cd_recommendedit .ucr_tab.tab_new.tab_on::after, .uio_cd_recommendedit .ucr_tab.tab_new::after, .uio_cd_rtkwt .ucr_btn_close::before, .uio_cd_sale.ucs_popmusic .ucs_down .ucs_ico, .uio_cd_sale.ucs_popmusic .ucs_up .ucs_ico, .uio_cd_selectview .ucs_btn.type_article.on::before, .uio_cd_selectview .ucs_btn.type_article::before, .uio_cd_selectview .ucs_btn.type_channel.on::before, .uio_cd_selectview .ucs_btn.type_channel::before, .uio_cd_selectview .ucs_btn.type_sns.on::before, .uio_cd_selectview .ucs_btn.type_sns::before, .uio_cd_selectview .ucs_btn_more::after, .uio_cd_selectview .ucs_btn_option::after, .uio_cd_selectview .ucs_btn_toggle.ucs_btn_on::after, .uio_cd_selectview .ucs_btn_toggle::after, .uio_cd_selectview .ucs_desciption.ucs_news::before, .uio_cd_selectview .ucs_desciption::before, .uio_cd_selectview .ucs_ha::after, .uio_cd_selectview .ucs_ico_beta, .uio_cd_selectview .ucs_ly_notice::before, .uio_cd_selectview .ucs_ly_wrap::before, .uio_cd_selectview .usc_ly_link::after, .uio_cd_startbanner .ucs_ico_beta, .uio_cd_startbanner .ucs_tbbtn_close::after, .uio_cd_startbanner .ucs_tbd .ucs_btn_more::after, .uio_cd_stock .ucs_ba.ucs_alert::before, .uio_cd_stock .ucs_ba.ucs_search::before, .uio_cd_stock .ucs_ba.ucs_stock::before, .uio_cd_stock .ucs_dec .ucs_v .ucs_icon, .uio_cd_stock .ucs_dec .ucs_vp .ucs_icon, .uio_cd_stock .ucs_inc .ucs_v .ucs_icon, .uio_cd_stock .ucs_inc .ucs_vp .ucs_icon, .uio_cd_subscribe .cui_ico_book, .uio_cd_subscribe .cui_ico_gif, .uio_cd_subscribe .spuio_arr_more_wh, .uio_cd_subscribe .spuio_ucs_fold, .uio_cd_subscribe .spuio_ucs_link, .uio_cd_subscribe .spuio_ucs_more_wh, .uio_cd_subscribe .spuio_ucs_unfold, .uio_cd_subscribe .ucs_ico_lmore, .uio_cd_thumb2 .uct_ico_link, .uio_cd_thumbh .uct_ico_ad, .uio_cd_thumbh .uct_ico_adoffer, .uio_cd_thumbscroll .spuio_pholar, .uio_cd_thumbscroll .uct_type2+.uct_uw .uct_ua::after, .uio_cd_thumbset .uct_btn_next.uct_btn_on::after, .uio_cd_thumbset .uct_btn_next::after, .uio_cd_thumbset .uct_btn_prev.uct_btn_on::after, .uio_cd_thumbset .uct_btn_prev::after, .uio_cd_thumbset .uct_info::before, .uio_cd_thumbset .uct_na::after, .uio_cd_thumbset .uct_page_num .uct_btn_next.uct_btn_on::after, .uio_cd_thumbset .uct_page_num .uct_btn_next::after, .uio_cd_thumbset .uct_page_num .uct_btn_prev.uct_btn_on::after, .uio_cd_thumbset .uct_page_num .uct_btn_prev::after, .uio_cd_timeline .ico_video, .uio_cd_timeline .uct_btn_close::before, .uio_cd_timeline .uct_btn_function::before, .uio_cd_timeline .uct_btn_help::before, .uio_cd_timeline .uct_btn_subscribe.uct_btn_on::before, .uio_cd_timeline .uct_btn_subscribe::before, .uio_cd_timeline .uct_function_close::before, .uio_cd_todaystock .sp_uct_search, .uio_cd_todaystock .uct_btn_alert::after, .uio_cd_todaystock .uct_dec .uct_sv .uct_vicon, .uio_cd_todaystock .uct_dec .uct_svp .uct_vicon, .uio_cd_todaystock .uct_inc .uct_sv .uct_vicon, .uio_cd_todaystock .uct_inc .uct_svp .uct_vicon, .uio_cd_todaystock .uct_tit .spuio_arr_more, .uio_cd_video .ucv_ico_ad, .uio_dictionary .fct_more_btn::before, .uio_dictionary .ly_fct_more_wrap .lfm_close::before, .uio_dictionary .ly_fct_more_wrap .lfm_ico.ico_add::before, .uio_dictionary .ly_fct_more_wrap .lfm_ico.ico_change::before, .uio_dictionary .ly_fct_more_wrap .lfm_ico.ico_delete::before, .uio_dictionary .ud_a.ud_cndic::before, .uio_dictionary .ud_a.ud_endic::before, .uio_dictionary .ud_a.ud_hanja::before, .uio_dictionary .ud_a.ud_jpdic::before, .uio_dictionary .ud_a.ud_krdic::before, .uio_fontsize .btn_uf_close::after, .uio_fontsize .mo_fontsize_area .mo_btn_font.fz2::before, .uio_fontsize .mo_fontsize_area .mo_btn_font.fz3::before, .uio_fontsize .mo_fontsize_area .mo_btn_font.fz4::before, .uio_fontsize .mo_fontsize_area .mo_btn_font.fz::before, .uio_fontsize .mo_fontsize_area .mo_btn_font.mo_font_on::after, .uio_fontsize .mo_fontsize_area .mo_btn_font::before, .uio_major_text .fct_more_btn::before, .uio_major_text .ly_fct_more_wrap .lfm_close::before, .uio_major_text .ly_fct_more_wrap .lfm_ico.ico_add::before, .uio_major_text .ly_fct_more_wrap .lfm_ico.ico_change::before, .uio_major_text .ly_fct_more_wrap .lfm_ico.ico_delete::before, .uio_matchreplay .um_btn_more .um_more, .uio_matchreplay .um_btn_more.st_up .um_more, .uio_matchreplay .um_list .um_btn_more .um_more, .uio_matchreplay .um_list .um_btn_more.st_up .um_more, .uio_matchreplay .um_list_scroll .um_no_play .um_t_sport::before, .uio_matchreplay .um_list_scroll .um_onair.um_multi, .uio_matchreplay .um_list_scroll .um_onair.um_pic, .uio_matchreplay .um_list_scroll .um_onair.um_spt, .uio_matchreplay .um_list_scroll .um_onair.um_tlc, .uio_matchreplay .um_tab_list.on::after, .uio_matchreplay .um_tab_list::after, .uio_matchreplay .um_tab_scroll.on::after, .uio_matchreplay .um_tab_scroll::after, .uio_myteam .sp_um_add, .uio_myteam .sp_um_arr_more, .uio_myteam .sp_um_video, .uio_myteam .um_noimage::before, .uio_news_ranking .fct_more_btn::before, .uio_news_ranking .ly_fct_more_wrap .lfm_close::before, .uio_news_ranking .ly_fct_more_wrap .lfm_ico.ico_add::before, .uio_news_ranking .ly_fct_more_wrap .lfm_ico.ico_change::before, .uio_news_ranking .ly_fct_more_wrap .lfm_ico.ico_delete::before, .uio_news_ranking .rtkx_btn_chelp::before, .uio_news_ranking .rtkx_btn_hclose::before, .uio_news_ranking .rtkx_ha::after, .uio_news_ranking .rtkx_hst, .uio_news_ranking .unr_btn_list::before, .uio_news_ranking .unr_btn_rolling::before, .uio_news_ranking .unr_list_item .unr_da::after, .uio_news_ranking .unr_list_item.unr_item_lg .unr_rank_down::before, .uio_news_ranking .unr_list_item.unr_item_lg .unr_rank_nothing::before, .uio_news_ranking .unr_list_item.unr_item_lg .unr_rank_up::before, .uio_news_ranking .unr_list_item.unr_item_md .unr_rank_down::before, .uio_news_ranking .unr_list_item.unr_item_md .unr_rank_nothing::before, .uio_news_ranking .unr_list_item.unr_item_md .unr_rank_up::before, .uio_news_ranking .unr_list_item.unr_item_sm .unr_rank_down::before, .uio_news_ranking .unr_list_item.unr_item_sm .unr_rank_nothing::before, .uio_news_ranking .unr_list_item.unr_item_sm .unr_rank_up::before, .uio_news_ranking .unr_toggle::before, .uio_night_news .unn_live, .uio_night_news .unn_ly_ques .ulq_close .spuio_ques_close, .uio_night_news .unn_m.unn_052, .uio_night_news .unn_m.unn_055, .uio_night_news .unn_m.unn_056, .uio_night_news .unn_m.unn_057, .uio_night_news .unn_m.unn_214, .uio_night_news .unn_m.unn_422, .uio_night_news .unn_m.unn_437, .uio_night_news .unn_m.unn_448, .uio_night_news .unn_m.unn_449, .uio_night_news .unn_m.unn_463, .uio_night_news .unn_ques .spuio_ques, .uio_service_shortcut .fct_more_btn::before, .uio_service_shortcut .ly_fct_more_wrap .lfm_close::before, .uio_service_shortcut .ly_fct_more_wrap .lfm_ico.ico_add::before, .uio_service_shortcut .ly_fct_more_wrap .lfm_ico.ico_change::before, .uio_service_shortcut .ly_fct_more_wrap .lfm_ico.ico_delete::before, .uio_service_shortcut .uss_ico_app, .uio_service_shortcut .uss_ico_new, .uio_service_shortcut .uss_service::before, .uio_tabnews .sp_ico_ut_video, .uio_text .sp_ico_view, .uio_text .ut_history_link .uth_btn.uth_btn_on::before, .uio_text .ut_history_link .uth_btn::before, .uio_text .utl_noimage::before, .uio_text .utl_right.utl_music .utl_mw::before, .uio_thumbnail .ut_noimage::before, .uio_thumbnail_more .ut_btn_next::after, .uio_thumbnail_more .ut_btn_prev::after, .uio_top .uio_addpanel::before, .uio_translator .fct_more_btn::before, .uio_translator .lang_btn_change:before, .uio_translator .ly_fct_more_wrap .lfm_close::before, .uio_translator .ly_fct_more_wrap .lfm_ico.ico_add::before, .uio_translator .ly_fct_more_wrap .lfm_ico.ico_change::before, .uio_translator .ly_fct_more_wrap .lfm_ico.ico_delete::before, .uio_translator .trans_btn_cam:after, .uio_translator .trans_btn_mic:after, .uio_translator .ut_btn_delete::after, .uio_translator .ut_btn_l.ut_selected::after, .uio_translator .ut_btn_toggle::before, .uio_translator .ut_change .ut_btn_lang::after, .uio_triple .ut_info::before, .uio_triple .ut_na::after, .uio_vapp .spuio_arr_more, .uio_weather .uw_breaking .uwb_do::after, .uio_weather .uw_breaking .uwb_il.uwb_bad .uwb_do::after, .uio_weather .uw_breaking .uwb_il.uwb_danger .uwb_do::after, .uio_weather .uw_breaking .uwb_il.uwb_dry .uwb_do::after, .uio_weather .uw_breaking .uwb_il.uwb_good .uwb_do::after, .uio_weather .uw_breaking .uwb_il.uwb_high .uwb_do::after, .uio_weather .uw_breaking .uwb_il.uwb_terrible .uwb_do::after, .uio_weather .uw_breaking .uwb_il.uwb_veryhigh .uwb_do::after, .uio_weather .uw_breaking .uwb_il.uwb_wet .uwb_do::after, .uio_weather .uw_breaking .uwb_il.uwb_windy .uwb_do::after, .uio_weather .uw_btn_local::before, .uio_weather .uw_ico_loading::after, .uio_weather .uw_timeline .uwt_ico_new, .uio_weather .uw_timeline .uwt_title::after, .uio_weather.uw_4search .fct_more_btn::before, .uio_weather.uw_4search .ly_fct_more_wrap .lfm_close::before, .uio_weather.uw_4search .ly_fct_more_wrap .lfm_ico.ico_add::before, .uio_weather.uw_4search .ly_fct_more_wrap .lfm_ico.ico_change::before, .uio_weather.uw_4search .ly_fct_more_wrap .lfm_ico.ico_delete::before, .uio_weather.uw_4search .uw_btn_toggle::before {
+    background-image: url(https://s.pstatic.net/static/www/m/2018/sp_main_v180627.png);
+    -webkit-background-size: 709px 708px;
+    background-size: 709px 708px;
+    background-repeat: no-repeat;
+}
+
+.nav .nav_lon .nav_a.nav_news::after {
+    width: 28px;
+    height: 16px;
+    background-position: -226px -618px;
+}
+
+.nav .nav_btn_more::before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    z-index: 0;
+}
+
+.nav_btn_more::after {
+    content: "";
+    display: block;
+    width: 14px;
+    height: 15px;
+    background-position: -528px -70px;
+    margin: 14px auto 13px;
+  }
+
+.dummy_container{
+    overflow-x: hidden;
+    min-height: 100%;
+}
+
+.dummy_sector{
+    min-height: 280px;
+    background-color: #ffffff;
+    border: 1px solid #f4f4f4;
+    margin-top:10px;
+    margin-bottom:10px;
+}

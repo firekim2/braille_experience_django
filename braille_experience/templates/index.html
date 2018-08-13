@@ -1,0 +1,52 @@
+{% load staticfiles %}
+{% load index %}
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <title>Braille Experience</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+</head>
+<body>
+  <div class="container">
+    <div id="viewer" class="viewer" ondragstart="return false" onselectstart="return false">
+      <div class="category">
+        <p id="category">
+          초성
+        </p>
+      </div>
+      <div class="glass">
+        <h1 id="big_font"></h1>
+      </div>
+      <h2 id="small_font">점자를 터치하여 글을 읽어보세요.</h2>
+    </div>
+    <div id="text0" class="textbox" ondragstart="return false" onselectstart="return false">
+      <div class="invisible_scroll">
+        <h2 class="text">
+          {% for element in result %}
+            {% if element.braille == " " %}
+              &nbsp;
+            {% else %}
+              <span class="character" id="{{ element.original }}" category="{{ element.category }}">{{ element.braille }}</span>
+            {% endif %}
+          {% endfor %}
+        </h2>
+      </div>
+    </div>
+  </div>
+  <div class="explain-container">
+    <div class="explain-background">
+    </div>
+    <div class="explain">
+      <p style="text-align:center;">한글 점자의 규칙을 알고 한번 더 읽어보세요!</p>
+      <br>
+      <p>한글 점자는 초성-중성-종성이 나누어 쓰고, 초성이 'ㅇ'일 경우 생략합니다.</p>
+      <p>한글 점자에는 약어가 있어 미리 약속된 '다'와 '운' 같은 글자는 하나의 점자로 쓸 수 있습니다.</p>
+    </div>
+  </div>
+  <script type="text/javascript" src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/character_ani.js' %}"></script>
+</body>
+</html>
