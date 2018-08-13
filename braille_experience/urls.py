@@ -24,7 +24,6 @@ urlpatterns = [
     url(r'^braille_experience/$', views.braille_viewer, name='braille_viewer'),
     url(r'^audio_clip/$', views.audio_clip, name='audio_clip'),
     url(r'^media/(?P<path>.*)$', serve,{'document_root': settings.MEDIA_ROOT}),
-
 ]
 
 if settings.DEBUG is True:
